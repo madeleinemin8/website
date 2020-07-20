@@ -572,8 +572,22 @@ a {
 }
 
 .name-top {
+  display: flex;
+}
+
+.name-top img {
+  margin-left: 1%;
+  display: block;
+  max-width: 8%;
+  max-height: 2%;
+}
+
+.name-top p {
+  margin: 0;
+  padding-top: 3.5%;
+  padding-left: 1.5%;
+  margin-bottom: 10px;
   font-size: 30px;
-  display: inline-block;
 }
 
 .display-topright {
@@ -772,10 +786,7 @@ a {
   background-color: #CFFFE5;
 }
 
-.dark-grey,
-.hover-dark-grey:hover,
-.dark-gray,
-.hover-dark-gray:hover {
- color: #fff;
- background-color: #616161
+.dark-grey {
+ color: #F6F4F5;
+ background-color: #303645;
 }
