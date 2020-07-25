@@ -20,15 +20,15 @@ style.
     a.nav-bar-item.button.padding-large.hide-small(href='#work') WORK
     a.nav-bar-item.button.padding-large.hide-small(href='#art') ART
     a.nav-bar-item.button.padding-large.hide-small(href='#contact') CONTACT
-    a.padding-large.hover-red.hide-small.right(href='javascript:void(0)')
+    //a.padding-large.hover-red.hide-small.right(href='javascript:void(0)')
 
 // Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links)
-#navDemo.nav-bar-block.black.hide.hide-medium.hide-medium.nav-top(style='margin-top:20px')
-  a.nav-bar-item.button.padding-medium(href='#about' onclick='showFunction()') ABOUT
-  a.nav-bar-item.button.padding-medium(href='#projects' onclick='showFunction()') WORK
-  a.nav-bar-item.button.padding-medium(href='#art' onclick='showFunction()') ART
-  a.nav-bar-item.button.padding-medium(href='#contact' onclick='showFunction()') CONTACT
-  a.nav-bar-item.button.padding-medium(href='#' onclick='showFunction()') MORE
+#navDemo.nav-bar-block.black.hide.hide-medium.hide-medium.nav-top(style='margin-top:46px')
+  a.nav-bar-item.button.padding-small(href='#about' onclick='showFunction()') ABOUT
+  a.nav-bar-item.button.padding-small(href='#projects' onclick='showFunction()') WORK
+  a.nav-bar-item.button.padding-small(href='#art' onclick='showFunction()') ART
+  a.nav-bar-item.button.padding-small(href='#contact' onclick='showFunction()') CONTACT
+  a.nav-bar-item.button.padding-small(href='#' onclick='showFunction()') MORE
 
 // Page content
 .content(style='max-width:2000px;margin-top:0px')
@@ -52,62 +52,59 @@ style.
   #projects.dark-grey
     .container.content.padding-32()
       h2.wide.center PROJECTS
-      p.opacity.center(style="font-size:24px")
-        i Web and HCI
-      hr
-      .row.padding-16
-        .half(style='padding-left:1%; padding-right:1%')
+      p.opacity.center(style="font-size:22px; padding:0") WEB + HCI
+      .row
+        .half(style='padding-left:1%; padding-right:1%; padding-top: 4%')
           img.hover-opacity(src='/images/windvr.jpg' alt='Me wearing a Vive headset + wind device extension' style='width:100%')
           .container.white
             p
               a(href='https://photos.app.goo.gl/94iyBt4vsCkvo1ZY6' target='_blank') VR Wind Haptic Vive Extension
-            p.opacity Winter 2020
+            p.opacity.noMobile Winter 2020
             p
               | This attachment to a Vive headset uses an Arduino Uno and angled fans on each side of the head
               | to produce the sensation of &apos;wind&apos; corresponding to the speed and direction of travel within a Unity racing game.
-        .half(style='padding-left:1%; padding-right:1%')
+        .half(style='padding-left:1%; padding-right:1%; padding-top: 4%')
           img.hover-opacity(src='/images/explore-team.jpg' alt='NYT Explore team on presentation day' style='width:100%')
           .container.white
             p
               a(href='https://github.com/almadireddy/nyt-explore' target='_blank') NYT Explore
-            p.opacity Summer 2019
+            p.opacity.noMobile Summer 2019
               p
-                | NYT Explore is a stylized, location-based mapping of all Times journalism regarding cultural elements like food/dining, music festivals, art galleries.
+                | A stylized, location-based mapping of all Times coverage on food/dining, music, and art exhibits.
                 | Built with Node.js, React, and Go.
-                | I worked on this project with a team of interns on Friday&apos;s during my internship at the New York Times.
-      .row.padding-16
-        .half(style='padding-left:1%; padding-right:1%')
+      .row
+        .half(style='padding-left:1%; padding-right:1%; padding-top: 4%')
           img.hover-opacity(src='/images/soundsnek.png' alt='Soundsnek gameplay' style='width:100%')
           .container.white
             p
               a(href='https://youtu.be/vVo9sHLF0ck' target='_blank') SoundSNEK
-            p.opacity Winter 2020
+            p.opacity.noMobile Winter 2020
             p
               | This is an audio-controlled classic snake game.
               | Pitch of the input controls turning, while volume controls game speed.
-        .half(style='padding-left:1%; padding-right:1%')
+        .half(style='padding-left:1%; padding-right:1%; padding-top: 4%')
           img.hover-opacity(src='/images/beat-graphic.png' alt='Beat detection demo graphic' style='width:100%')
-          p
-            a(href='') Beat Detector
-          p.opacity Winter 2020
-          p Detects half, quarter, and eighth notes at a 120 bpm tempo using Google's Teachable Machine.
-      p.opacity.center(style="font-size:24px")
-        i Mobile
-      hr
-      .row.padding-16
-        .third(style='padding-right:1%')
+          .container.white
+            p
+              a(href='') Beat Detector
+            p.opacity.noMobile Winter 2020
+            p 
+              | Detects half, quarter, and eighth notes at a 120 bpm tempo using Google's Teachable Machine.
+      p.opacity.center(style="font-size:22px; margin-top: 5%") MOBILE
+      .row
+        .third(style='padding-left:1%; padding-right:1%; padding-top: 4%')
           img.hover-opacity(src='/images/stormsupport.png' alt='StormSupport interface for Android' style='width:100%')
           .container.white
             p
               b StormSupport for iOS / Android
             p An application that provides flood hazard map data from FEMA combined with mapped, crowdsourced user data, searchable by location.
-        .third(style='padding-right:1% padding-left:1%')
+        .third(style='padding-right:1% padding-left:1%; padding-top: 4%')
           img.hover-opacity(src='/images/onthedot.png' alt='Two screenshots of the app interface' style='width:100%')
           .container.white
             p
               b OnTheDot for Android
             p A daily routine planner app with Google Maps integration and minute-to-minute notifications.
-        .third(style='padding-left:1%')
+        .third(style='padding-left:1%; padding-right:1%; padding-top: 4%')
           img.hover-opacity(src='/images/viewsnews.png' alt='' style='width:100%')
           .container.white
             p
@@ -156,9 +153,9 @@ style.
           |  Phone: 1(703)6087710
           br
           i.fa.fa-envelope(style='width:30px')  
-          |  Email: madeleinemin@uchicago.edu
+          |  madeleinemin@uchicago.edu
           br
-          img(src='/images/link.png' style='width:22px; margin-right: 11px') 
+          img(src='/images/link.png' style='width:20px; margin-right: 13px') 
           a(href='https://www.linkedin.com/in/madeleine-min' target='_blank') LinkedIn
           br
         //.col.m6
