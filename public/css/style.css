@@ -7,6 +7,12 @@ html {
  box-sizing: inherit
 }
 
+@media screen and (max-width: 600px) {
+
+  .noMobile {
+      display:none;
+  }
+}
 
 /* Extracted from normalize.css by Nicolas Gallagher and Jonathan Neal at git.io/normalize */
 

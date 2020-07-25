@@ -18,19 +18,25 @@ style.
       i.fa.fa-bars
     a.nav-bar-item.button.padding-large(href='#') HOME
     a.nav-bar-item.button.padding-large.hide-small(href='#about') ABOUT
-    a.nav-bar-item.button.padding-large.hide-small(href='#projects') PROJECTS
+    a.nav-bar-item.button.padding-large.hide-small(href='#work') WORK
     a.nav-bar-item.button.padding-large.hide-small(href='#art') ART
     a.nav-bar-item.button.padding-large.hide-small(href='#contact') CONTACT
     a.padding-large.hover-red.hide-small.right(href='javascript:void(0)')
-      i.fa.fa-search
+
 // Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links)
-#navDemo.nav-bar-block.black.hide.hide-medium.hide-medium.nav-top(style='margin-top:46px')
+<!--#navDemo.nav-bar-block.black.hide.hide-medium.hide-medium.nav-top(style='margin-top:46px')
   a.nav-bar-item.button.padding-large(href='#about' onclick='showFunction()') ABOUT ME
   a.nav-bar-item.button.padding-large(href='#projects' onclick='showFunction()') PROJECTS
   a.nav-bar-item.button.padding-large(href='#art' onclick='showFunction()') ART
   a.nav-bar-item.button.padding-large(href='#contact' onclick='showFunction()') CONTACT
-  a.nav-bar-item.button.padding-large(href='#' onclick='showFunction()') MORE
-  
+  a.nav-bar-item.button.padding-large(href='#' onclick='showFunction()') MORE-->
+#navDemo.nav-bar-block.black.hide.hide-medium.hide-medium.nav-top(style='margin-top:46px')
+  a.nav-bar-item.button.padding-small(href='#about' onclick='showFunction()') ABOUT ME
+  a.nav-bar-item.button.padding-small(href='#projects' onclick='showFunction()') PROJECTS
+  a.nav-bar-item.button.padding-small(href='#art' onclick='showFunction()') ART
+  a.nav-bar-item.button.padding-small(href='#contact' onclick='showFunction()') CONTACT
+  a.nav-bar-item.button.padding-small(href='#' onclick='showFunction()') MORE
+
 // Page content
 .content(style='max-width:2000px;margin-top:0px')
   
@@ -38,11 +44,11 @@ style.
   #about.container.content.center.slight-grey(style='max-width:100%; padding-top:1.5%')
     .row.padding-32(style='padding-left:10%; padding-right:10%')
         .third
-          img.round.margin-bottom(src='/images/me1.jpg' alt='Maddie Min' style='width:80%')
+          img.round.margin-bottom(src='/images/me1.jpg' alt='Maddie Min' style='width:80%').noMobile
         .third
           img.round.margin-bottom(src='/images/me2.jpg' alt='Maddie Min' style='width:80%')
         .third
-          img.round(src='/images/me3.jpg' alt='Maddie Min' style='width:80%')
+          img.round(src='/images/me3.jpg' alt='Maddie Min' style='width:80%').noMobile
     h2.wide HI, I'M MADDIE...
     p.center.justify(style='padding-left:12%; padding-right:12%; padding-bottom:5%;')
       | I&apos;m a third year undergraduate at the University of Chicago, majoring in Computer Science and minoring in Media Arts and Design.
@@ -117,27 +123,27 @@ style.
     #art.ming-blue
       .container.content.padding-32
         h2.wide.center ART
-        .row.padding-32
-          .third(style='padding-left:4%; padding-right:2%')
+        .row.padding-16
+          .third(style='padding-left:4%; padding-right:2%; padding-top:2%')
             img.hover-opacity(src='/images/colorpiece1.jpg' alt='' style='width:100%')
-          .third(style='padding-left:2%; padding-right:2%')
+          .third(style='padding-left:2%; padding-right:2%; padding-top:2%')
             img.hover-opacity(src='/images/colorpiece2.jpg' alt='' style='width:100%')
-          .third(style='padding-left:2%; padding-right:4%')
+          .third(style='padding-left:2%; padding-right:4%; padding-top:2%')
             img.hover-opacity(src='/images/monochrome.jpg' alt='' style='width:100%')
-        .row.padding-32
-          .third(style='padding-left:4%; padding-right:2%')
+        .row.padding-16
+          .third(style='padding-left:4%; padding-right:2%; padding-top:2%')
             img.hover-opacity(src='/images/purplepiece.jpg' alt='' style='width:100%')
-          .third(style='padding-left:2%; padding-right:2%')
+          .third(style='padding-left:2%; padding-right:2%; padding-top:2%')
             img.hover-opacity(src='/images/collage.JPG' alt='' style='width:100%')
-          .third(style='padding-left:2%; padding-right:4%')
+          .third(style='padding-left:2%; padding-right:4%; padding-top:2%')
             img.hover-opacity(src='/images/colorwall.jpg' alt='' style='width:100%')
-        .row.padding-32
-          .half(style='padding-left:4%; padding-right:2%')
+        .row.padding-16
+          .half(style='padding-left:4%; padding-right:2%; padding-top:2%')
             img.hover-opacity(src='/images/vr-art.png' alt='Virtual Reality art' style='width:100%')
             p
               a(href='https://madeleinemin8.github.io/Nature-Vacation/' target='_blank') VR Art - Natural Confusion.
             p An immersive piece contrasting natural themes with the warped and engineered lens of virtual reality. Created using P5 and A-Frame for web and Vive.
-          .half(style='padding-left:2%; padding-right:4%')
+          .half(style='padding-left:2%; padding-right:4%; padding-top:2%')
             img.hover-opacity(src='/images/remote-art.png' alt="Art piece modeling remote connectivity" style='width:100%')
             p 
               a(href='https://madeleinemin8.github.io/finalproject/' target='_blank') Connect 4,000,000
