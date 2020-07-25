@@ -23,18 +23,12 @@ style.
     a.padding-large.hover-red.hide-small.right(href='javascript:void(0)')
 
 // Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links)
-<!--#navDemo.nav-bar-block.black.hide.hide-medium.hide-medium.nav-top(style='margin-top:46px')
-  a.nav-bar-item.button.padding-large(href='#about' onclick='showFunction()') ABOUT ME
-  a.nav-bar-item.button.padding-large(href='#projects' onclick='showFunction()') PROJECTS
-  a.nav-bar-item.button.padding-large(href='#art' onclick='showFunction()') ART
-  a.nav-bar-item.button.padding-large(href='#contact' onclick='showFunction()') CONTACT
-  a.nav-bar-item.button.padding-large(href='#' onclick='showFunction()') MORE-->
-#navDemo.nav-bar-block.black.hide.hide-medium.hide-medium.nav-top(style='margin-top:46px')
-  a.nav-bar-item.button.padding-small(href='#about' onclick='showFunction()') ABOUT ME
-  a.nav-bar-item.button.padding-small(href='#projects' onclick='showFunction()') WORK
-  a.nav-bar-item.button.padding-small(href='#art' onclick='showFunction()') ART
-  a.nav-bar-item.button.padding-small(href='#contact' onclick='showFunction()') CONTACT
-  a.nav-bar-item.button.padding-small(href='#' onclick='showFunction()') MORE
+#navDemo.nav-bar-block.black.hide.hide-medium.hide-medium.nav-top(style='margin-top:20px')
+  a.nav-bar-item.button.padding-medium(href='#about' onclick='showFunction()') ABOUT
+  a.nav-bar-item.button.padding-medium(href='#projects' onclick='showFunction()') WORK
+  a.nav-bar-item.button.padding-medium(href='#art' onclick='showFunction()') ART
+  a.nav-bar-item.button.padding-medium(href='#contact' onclick='showFunction()') CONTACT
+  a.nav-bar-item.button.padding-medium(href='#' onclick='showFunction()') MORE
 
 // Page content
 .content(style='max-width:2000px;margin-top:0px')
@@ -62,7 +56,7 @@ style.
         i Web and HCI
       hr
       .row.padding-16
-        .half(style='padding-left:2%; padding-right:1%')
+        .half(style='padding-left:1%; padding-right:1%')
           img.hover-opacity(src='/images/windvr.jpg' alt='Me wearing a Vive headset + wind device extension' style='width:100%')
           .container.white
             p
@@ -71,7 +65,7 @@ style.
             p
               | This attachment to a Vive headset uses an Arduino Uno and angled fans on each side of the head
               | to produce the sensation of &apos;wind&apos; corresponding to the speed and direction of travel within a Unity racing game.
-        .half(style='padding-left:1%; padding-right:2%')
+        .half(style='padding-left:1%; padding-right:1%')
           img.hover-opacity(src='/images/explore-team.jpg' alt='NYT Explore team on presentation day' style='width:100%')
           .container.white
             p
@@ -82,7 +76,7 @@ style.
                 | Built with Node.js, React, and Go.
                 | I worked on this project with a team of interns on Friday&apos;s during my internship at the New York Times.
       .row.padding-16
-        .half(style='padding-left:2%; padding-right:1%')
+        .half(style='padding-left:1%; padding-right:1%')
           img.hover-opacity(src='/images/soundsnek.png' alt='Soundsnek gameplay' style='width:100%')
           .container.white
             p
@@ -91,7 +85,7 @@ style.
             p
               | This is an audio-controlled classic snake game.
               | Pitch of the input controls turning, while volume controls game speed.
-        .half(style='padding-left:1%; padding-right:2%')
+        .half(style='padding-left:1%; padding-right:1%')
           img.hover-opacity(src='/images/beat-graphic.png' alt='Beat detection demo graphic' style='width:100%')
           p
             a(href='') Beat Detector
@@ -101,7 +95,7 @@ style.
         i Mobile
       hr
       .row.padding-16
-        .third(style='padding-right:2%')
+        .third(style='padding-right:1%')
           img.hover-opacity(src='/images/stormsupport.png' alt='StormSupport interface for Android' style='width:100%')
           .container.white
             p
@@ -113,7 +107,7 @@ style.
             p
               b OnTheDot for Android
             p A daily routine planner app with Google Maps integration and minute-to-minute notifications.
-        .third(style='padding-left:2%')
+        .third(style='padding-left:1%')
           img.hover-opacity(src='/images/viewsnews.png' alt='' style='width:100%')
           .container.white
             p
