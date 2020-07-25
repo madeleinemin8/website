@@ -10,7 +10,14 @@ html {
 @media screen and (max-width: 600px) {
 
   .noMobile {
-      display:none;
+    display: none;
+  }
+
+  .smallImageMobile {
+    width: 20%;
+    height: 20%;
+    padding-top: 4%;
+    display: auto;
   }
 }
 
@@ -724,7 +731,7 @@ a {
 }
 
 .padding-small {
- padding: 4px 8px
+ padding: 1% 2%
 }
 
 .padding {
