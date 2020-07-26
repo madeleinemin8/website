@@ -59,40 +59,14 @@ img {
  border-style: none
 }
 
-code,
-kbd,
-pre,
-samp {
- font-family: monospace, monospace;
- font-size: 1em
-}
-
-hr {
- box-sizing: content-box;
- height: 0;
- overflow: visible
-}
-
-button,
-input,
-select,
-textarea,
-optgroup {
- font: inherit;
- margin: 0
-}
-
-optgroup {
- font-weight: bold
-}
-
 button,
 input {
+ font: inherit;
+ margin: 0;
  overflow: visible
 }
 
-button,
-select {
+button {
  text-transform: none
 }
 
