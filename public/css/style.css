@@ -8,7 +8,6 @@ html {
 }
 
 @media screen and (max-width: 600px) {
-
   .noMobile {
     display: none;
   }
@@ -33,42 +32,10 @@ body {
 }
 
 article,
-aside,
-details,
-figcaption,
-figure,
 footer,
-header,
 main,
-menu,
-nav,
 section {
  display: block
-}
-
-summary {
- display: list-item
-}
-
-audio,
-canvas,
-progress,
-video {
- display: inline-block
-}
-
-progress {
- vertical-align: baseline
-}
-
-audio:not([controls]) {
- display: none;
- height: 0
-}
-
-[hidden],
-template {
- display: none
 }
 
 a {
@@ -80,48 +47,12 @@ a:hover {
  outline-width: 0
 }
 
-abbr[title] {
- border-bottom: none;
- text-decoration: underline;
- text-decoration: underline dotted
-}
-
-b,
-strong {
+b {
  font-weight: bolder
-}
-
-dfn {
- font-style: italic
-}
-
-mark {
- background: #ff0;
- color: #000
 }
 
 small {
  font-size: 80%
-}
-
-sub,
-sup {
- font-size: 75%;
- line-height: 0;
- position: relative;
- vertical-align: baseline
-}
-
-sub {
- bottom: -0.25em
-}
-
-sup {
- top: -0.5em
-}
-
-figure {
- margin: 1em 40px
 }
 
 img {
