@@ -37,13 +37,6 @@ body {
  margin: 0
 }
 
-article,
-footer,
-main,
-section {
- display: block
-}
-
 a {
  background-color: transparent;
  color: inherit
@@ -73,10 +66,6 @@ input {
  overflow: visible
 }
 
-button {
- 
-}
-
 h2 {
  font-size: 30px;
  font-family: "Segoe UI", Arial, sans-serif;
@@ -94,7 +83,7 @@ h2 {
 }
 
 img {
- vertical-align: middle
+ vertical-align: middle;
 }
 
 .button {
@@ -203,7 +192,6 @@ img {
 .content {
  margin-left: auto;
  margin-right: auto;
- max-width: 980px
 }
 
 .hide {
@@ -284,6 +272,52 @@ img {
  margin-bottom: 16px
 }
 
+#about {
+  max-width:100%; 
+  padding-top:1.5%
+}
+
+#about p {
+  padding-left: 12%; 
+  padding-right: 12%; 
+  padding-bottom: 5%;
+  padding-top: 1%
+}
+
+.subsectionTitle {
+  font-size: 24px; 
+  margin-top: 5%
+}
+
+.project-item {
+  padding-left: 1%; 
+  padding-right: 1%; 
+  padding-top: 4%
+}
+
+.project-item img {
+  width: 100%
+}
+
+.art-item {
+  padding-left: 2%; 
+  padding-right: 2%; 
+  padding-top: 6%
+}
+
+.art-item img {
+  width: 100%
+}
+
+.contact-item {
+  width: 30px;
+  margin-right: 1%;
+}
+
+.width-80 {
+  width: 80%
+}
+
 .padding-small {
  padding: 1% 2%
 }
@@ -294,6 +328,11 @@ img {
 
 .padding-large {
  padding: 12px 24px
+}
+
+.padding-10 {
+  padding-left: 10%;
+  padding-right: 10%
 }
 
 .padding-32 {
