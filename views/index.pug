@@ -8,7 +8,7 @@ link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/
 style.
   body {font-family: 'Noto Sans JP', sans-serif;}
   
-// Navbar
+// Navigation bar
 .nav-top
   .name-top.light-grey
     img(src='/images/logo.png').smallImageMobile
@@ -22,18 +22,17 @@ style.
     a.nav-bar-item.button.padding-large.hide-small(href='#contact') CONTACT
     //a.padding-large.hover-red.hide-small.right(href='javascript:void(0)')
 
-// Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links)
-#navDemo.nav-bar-block.black.hide.hide-medium.hide-medium.nav-top(style='margin-top:46px')
+// Navigation bar on small screens
+#navDemo.nav-bar-block.black.hide.hide-medium.hide-medium.nav-top
   a.nav-bar-item.button.padding-small(href='#about' onclick='showFunction()') ABOUT
   a.nav-bar-item.button.padding-small(href='#projects' onclick='showFunction()') WORK
   a.nav-bar-item.button.padding-small(href='#art' onclick='showFunction()') ART
   a.nav-bar-item.button.padding-small(href='#contact' onclick='showFunction()') CONTACT
   a.nav-bar-item.button.padding-small(href='#' onclick='showFunction()') MORE
 
-// Page content
 .content(style='max-width:2000px;margin-top:0px')
   
-  // About Me Section
+  // About Section
   #about.container.content.center.slight-grey(style='max-width:100%; padding-top:1.5%')
     .row.padding-32(style='padding-left:10%; padding-right:10%')
         .third
