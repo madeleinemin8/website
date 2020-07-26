@@ -229,13 +229,6 @@ img {
   font-size: 30px;
 }
 
-.row-padding,
-.row-padding>.half,
-.row-padding>.third,
-.row-padding>.col {
- padding: 0 8px
-}
-
 .container {
  padding: 0.01em 16px
 }
@@ -316,6 +309,15 @@ img {
 
 .width-80 {
   width: 80%
+}
+
+/* PADDING */
+
+.row-padding,
+.row-padding>.half,
+.row-padding>.third,
+.row-padding>.col {
+ padding: 0 8px
 }
 
 .padding-small {
