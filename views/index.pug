@@ -10,9 +10,9 @@ style.
 // Navigation bar
 .nav-top
   .name-top.light-grey
-    img(src='/images/logo.jpg').smallImageMobile
+    img(src='/images/logo.png').smallImageMobile
     p Maddie Min
-  .nav-bar.black.card
+  .nav-bar.black
     a.nav-bar-item.button.padding-large.hide-medium.hide-large.right(href='javascript:void(0)' onclick='showFunction()' title='Toggle Navigation Menu')
       i.fa.fa-bars
     a.nav-bar-item.button.padding-large.hide-small.white-text-color(href='#about') ABOUT
@@ -22,7 +22,7 @@ style.
     //a.padding-large.hover-red.hide-small.right(href='javascript:void(0)')
 
 // Navigation bar on small screens
-#navDemo.nav-bar-block.black.hide.hide-medium.hide-medium.nav-top
+#navDemo.nav-bar-block.black.hide.hide-medium.nav-top
   a.nav-bar-item.button.padding-small(href='#about' onclick='showFunction()') ABOUT
   a.nav-bar-item.button.padding-small(href='#projects' onclick='showFunction()') WORK
   a.nav-bar-item.button.padding-small(href='#art' onclick='showFunction()') ART
@@ -33,7 +33,7 @@ style.
   
   // About Section
   #about.container.content.center.slight-grey
-    .row.padding-32.padding-10
+    .row.padding-10.padding-32
         .third
           img.round.margin-bottom(src='/images/me1.jpg' alt='Maddie Min').width-80.noMobile
         .third
@@ -90,34 +90,34 @@ style.
             p 
               | Detects half, quarter, and eighth notes at a 120 bpm tempo using Google's Teachable Machine.
       p.opacity.center.subsectionTitle MOBILE
-      .row
+      .row.white-text-color.center
         .third.project-item
           img.hover-opacity(src='/images/stormsupport.jpg' alt='StormSupport interface for Android')
-          .container.white-text-color
+          .container
             p
               b StormSupport for iOS / Android
-            p An application that provides flood hazard map data from FEMA combined with mapped, crowdsourced user data, searchable by location.
+            p An app that provides flood hazard map data from FEMA combined with mapped, crowd sourced user data, searchable by location.
         .third.project-item
           img.hover-opacity(src='/images/onthedot.jpg' alt='Two screenshots of the app interface')
-          .container.white-text-color
+          .container
             p
               b OnTheDot for Android
             p A daily routine planner app with Google Maps integration and minute-to-minute notifications.
         .third.project-item
           img.hover-opacity(src='/images/viewsnews.jpg' alt='')
-          .container.white-text-color
+          .container
             p
               b ViewsNews for Android
             p A news aggregator that allows the user to filter and mix news articles from different sources.
     #art.ming-blue
-      .container.content.padding-32.padding-art
+      .container.content.padding-art
         h2.wide.center.white-text-color ART
         .row
-          .third.art-item
+          .third.art-item.art-item-top
             img.hover-opacity(src='/images/colorpiece1.jpg' alt='')
-          .third.art-item
+          .third.art-item.art-item-top
             img.hover-opacity(src='/images/colorpiece3.jpg' alt='')
-          .third.art-item
+          .third.art-item.art-item-top
             img.hover-opacity(src='/images/colorpiece2.jpg' alt='')
         .row
           .half.art-item
