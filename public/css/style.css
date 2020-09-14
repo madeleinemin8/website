@@ -28,8 +28,7 @@ html {
 
 html,
 body {
- font-family: Verdana, sans-serif;
- font-size: 15px;
+ font-size: 17px;
  line-height: 1.5
 }
 
@@ -68,9 +67,8 @@ input {
 
 h2 {
  font-size: 30px;
- font-family: "Segoe UI", Arial, sans-serif;
  font-weight: 400;
- margin: 10px 0
+ margin: 15px 0
 }
 
 .wide {
@@ -267,25 +265,25 @@ img {
 
 #about {
   max-width:100%; 
-  padding-top:1.5%
+  padding-top: 4%
 }
 
 #about p {
   padding-left: 12%; 
   padding-right: 12%; 
-  padding-bottom: 5%;
+  padding-bottom: 4%;
   padding-top: 1%
 }
 
 .subsectionTitle {
   font-size: 24px; 
-  margin-top: 5%
+  margin-top: 3%
 }
 
 .project-item {
   padding-left: 1%; 
   padding-right: 1%; 
-  padding-top: 4%
+  padding-top: 3%
 }
 
 .project-item img {
@@ -350,6 +348,8 @@ img {
 .padding-projects {
   padding-left: 8%;
   padding-right: 8%;
+  padding-top: 3%;
+  padding-bottom: 4%
 }
 .padding-art {
   padding-left: 10%;
@@ -387,4 +387,8 @@ img {
 .dark-grey {
  color: #F6F4F5;
  background-color: #303645;
+}
+
+.white-text-color {
+  color: #CEDADA;
 }

@@ -2,24 +2,23 @@ doctype html
 meta(charset='UTF-8')
 meta(name='viewport' content='width=device-width, initial-scale=1')
 link(rel='stylesheet' href='/css/style.css')
-link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato')
-link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap')
+link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap")
 link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 style.
-  body {font-family: 'Noto Sans JP', sans-serif;}
+  body {font-family: 'Open Sans', sans-serif;}
   
 // Navigation bar
 .nav-top
   .name-top.light-grey
-    img(src='/images/logo.png').smallImageMobile
+    img(src='/images/logo.jpg').smallImageMobile
     p Maddie Min
   .nav-bar.black.card
     a.nav-bar-item.button.padding-large.hide-medium.hide-large.right(href='javascript:void(0)' onclick='showFunction()' title='Toggle Navigation Menu')
       i.fa.fa-bars
-    a.nav-bar-item.button.padding-large.hide-small(href='#about') ABOUT
-    a.nav-bar-item.button.padding-large.hide-small(href='#work') WORK
-    a.nav-bar-item.button.padding-large.hide-small(href='#art') ART
-    a.nav-bar-item.button.padding-large.hide-small(href='#contact') CONTACT
+    a.nav-bar-item.button.padding-large.hide-small.white-text-color(href='#about') ABOUT
+    a.nav-bar-item.button.padding-large.hide-small.white-text-color(href='#work') WORK
+    a.nav-bar-item.button.padding-large.hide-small.white-text-color(href='#art') ART
+    a.nav-bar-item.button.padding-large.hide-small.white-text-color(href='#contact') CONTACT
     //a.padding-large.hover-red.hide-small.right(href='javascript:void(0)')
 
 // Navigation bar on small screens
@@ -50,13 +49,13 @@ style.
   
   // Project Section
   #work.dark-grey
-    .container.content.padding-32.padding-projects
-      h2.wide.center PROJECTS
+    .container.content.padding-projects
+      h2.wide.center.white-text-color PROJECTS
       p.opacity.center.subsectionTitle WEB + HCI
       .row
         .half.project-item
           img.hover-opacity(src='/images/windvr.jpg' alt='Me wearing a Vive headset + wind device extension')
-          .container.white
+          .container.white-text-color
             p
               a(href='https://photos.app.goo.gl/94iyBt4vsCkvo1ZY6' target='_blank') VR Wind Haptic Vive Extension
             p.opacity.noMobile Winter 2020
@@ -64,8 +63,8 @@ style.
               | This attachment to a Vive headset uses an Arduino Uno and angled fans on each side of the head
               | to produce the sensation of &apos;wind&apos; corresponding to the speed and direction of travel within a Unity racing game.
         .half.project-item
-          img.hover-opacity(src='/images/explore-team.jpg' alt='NYT Explore team on presentation day')
-          .container.white
+          img.hover-opacity(src='/images/nyt-explore.jpeg' alt='NYT Explore team on presentation day')
+          .container.white-text-color
             p
               a(href='https://github.com/almadireddy/nyt-explore' target='_blank') NYT Explore
             p.opacity.noMobile Summer 2019
@@ -74,8 +73,8 @@ style.
                 | Built with Node.js, React, and Go.
       .row
         .half.project-item
-          img.hover-opacity(src='/images/soundsnek.png' alt='Soundsnek gameplay')
-          .container.white
+          img.hover-opacity(src='/images/soundsnek.jpg' alt='Soundsnek gameplay')
+          .container.white-text-color
             p
               a(href='https://youtu.be/vVo9sHLF0ck' target='_blank') SoundSNEK
             p.opacity.noMobile Winter 2020
@@ -83,8 +82,8 @@ style.
               | This is an audio-controlled classic snake game.
               | Pitch of the input controls turning, while volume controls game speed.
         .half.project-item
-          img.hover-opacity(src='/images/beat-graphic.png' alt='Beat detection demo graphic')
-          .container.white
+          img.hover-opacity(src='/images/beat-graphic.jpg' alt='Beat detection demo graphic')
+          .container.white-text-color
             p
               a(href='') Beat Detector
             p.opacity.noMobile Winter 2020
@@ -93,65 +92,65 @@ style.
       p.opacity.center.subsectionTitle MOBILE
       .row
         .third.project-item
-          img.hover-opacity(src='/images/stormsupport.png' alt='StormSupport interface for Android')
-          .container.white
+          img.hover-opacity(src='/images/stormsupport.jpg' alt='StormSupport interface for Android')
+          .container.white-text-color
             p
               b StormSupport for iOS / Android
             p An application that provides flood hazard map data from FEMA combined with mapped, crowdsourced user data, searchable by location.
         .third.project-item
-          img.hover-opacity(src='/images/onthedot.png' alt='Two screenshots of the app interface')
-          .container.white
+          img.hover-opacity(src='/images/onthedot.jpg' alt='Two screenshots of the app interface')
+          .container.white-text-color
             p
               b OnTheDot for Android
             p A daily routine planner app with Google Maps integration and minute-to-minute notifications.
         .third.project-item
-          img.hover-opacity(src='/images/viewsnews.png' alt='')
-          .container.white
+          img.hover-opacity(src='/images/viewsnews.jpg' alt='')
+          .container.white-text-color
             p
               b ViewsNews for Android
-            p A news aggregator that allows the user to mix and compile news articles from different sources, providing multiple viewpoints on each issue of choice.
+            p A news aggregator that allows the user to filter and mix news articles from different sources.
     #art.ming-blue
       .container.content.padding-32.padding-art
-        h2.wide.center ART
+        h2.wide.center.white-text-color ART
         .row
           .third.art-item
-            img.hover-opacity(src='/images/colorpiece1.png' alt='')
+            img.hover-opacity(src='/images/colorpiece1.jpg' alt='')
           .third.art-item
-            img.hover-opacity(src='/images/colorpiece3.png' alt='')
+            img.hover-opacity(src='/images/colorpiece3.jpg' alt='')
           .third.art-item
-            img.hover-opacity(src='/images/colorpiece2.png' alt='')
+            img.hover-opacity(src='/images/colorpiece2.jpg' alt='')
         .row
           .half.art-item
             img.hover-opacity(src='/images/purplepiece.jpg' alt='')
           .half.art-item
-            img.hover-opacity(src='/images/collage.png' alt='')
+            img.hover-opacity(src='/images/collage.jpg' alt='')
         .row
           .half.art-item
-            img.hover-opacity(src='/images/collage2.png' alt='')
+            img.hover-opacity(src='/images/collage2.jpg' alt='')
           .half.art-item
-            img.hover-opacity(src='/images/colorwall.png' alt='')
+            img.hover-opacity(src='/images/colorwall.jpg' alt='')
         .row
           .third.art-item
-            img.hover-opacity(src='/images/monochrome1.png' alt='')
+            img.hover-opacity(src='/images/monochrome1.jpg' alt='')
           .third.art-item
-            img.hover-opacity(src='/images/monochrome2.png' alt='')
+            img.hover-opacity(src='/images/monochrome2.jpg' alt='')
           .third.art-item
-            img.hover-opacity(src='/images/monochrome3.png' alt='')
+            img.hover-opacity(src='/images/monochrome3.jpg' alt='')
         .row
           .third.art-item
-            img.hover-opacity(src='/images/monochrome4.png' alt='')
+            img.hover-opacity(src='/images/monochrome4.jpg' alt='')
           .third.art-item
-            img.hover-opacity(src='/images/monochrome5.png' alt='')
+            img.hover-opacity(src='/images/monochrome5.jpg' alt='')
           .third.art-item
             
-        .row
+        .row.white-text-color
           .half.art-item
-            img.hover-opacity(src='/images/vr-art.png' alt='Virtual Reality art')
+            img.hover-opacity(src='/images/vr-art.jpg' alt='Virtual Reality art')
             p
               a(href='https://madeleinemin8.github.io/Nature-Vacation/' target='_blank') VR Art - Natural Confusion.
             p An immersive piece contrasting natural themes with the warped and engineered lens of virtual reality. Created using P5 and A-Frame for web and Vive.
           .half.art-item
-            img.hover-opacity(src='/images/remote-art.png' alt="Art piece modeling remote connectivity")
+            img.hover-opacity(src='/images/remote-art.jpg' alt="Art piece modeling remote connectivity")
             p 
               a(href='https://madeleinemin8.github.io/finalproject/' target='_blank') Connect 4,000,000
             p A gamified parody of globalized dependence on remote communication / social media services
